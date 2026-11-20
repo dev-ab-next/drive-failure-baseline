@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 30,
+    "level": "L4",
+    "method": "M0",
+    "feature_set": "core",
+    "seed": 2,
+    "code_version": "e9a9a37",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 4331936,
+    "train_positive_rows": 252580,
+    "fit_seconds": 26.6,
+    "score_seconds": 260.3,
+    "seconds": 303.5
+  },
+  "metrics": {
+    "pr_auc": 0.36548474653308477,
+    "roc_auc": 0.9214576281257683,
+    "failures": 2681,
+    "healthy_drives": 364908,
+    "test_curve_0.1pct": {
+      "threshold": 0.9984429504602668,
+      "detection_rate": 0.18425960462513988,
+      "false_alarm_rate": 0.0009975117015795763,
+      "failures": 2681,
+      "caught": 494,
+      "healthy_drives": 364908,
+      "warning_days_median": 15.0,
+      "warning_days_q1": 5.0,
+      "warning_days_q3": 25.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9982820146900699,
+      "detection_rate": 0.20029839612085043,
+      "false_alarm_rate": 0.00118111962467252,
+      "failures": 2681,
+      "caught": 537,
+      "healthy_drives": 364908,
+      "warning_days_median": 15.0,
+      "warning_days_q1": 5.0,
+      "warning_days_q3": 26.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.9872325261935726,
+      "detection_rate": 0.6098470719880642,
+      "false_alarm_rate": 0.009999780766658993,
+      "failures": 2681,
+      "caught": 1635,
+      "healthy_drives": 364908,
+      "warning_days_median": 22.0,
+      "warning_days_q1": 10.0,
+      "warning_days_q3": 29.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.9852441052687192,
+      "detection_rate": 0.6296158149944051,
+      "false_alarm_rate": 0.011191862058381838,
+      "failures": 2681,
+      "caught": 1688,
+      "healthy_drives": 364908,
+      "warning_days_median": 23.0,
+      "warning_days_q1": 10.0,
+      "warning_days_q3": 29.0
+    },
+    "brier_test_calibrated": 0.0010402434403951604,
+    "accuracy_of_always_healthy_test_days": 0.9988960302073753
+  }
+}

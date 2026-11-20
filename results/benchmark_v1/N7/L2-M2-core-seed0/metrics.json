@@ -1,0 +1,71 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L2",
+    "method": "M2",
+    "feature_set": "core",
+    "seed": 0,
+    "code_version": "752671c",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "rows_added": 383719,
+    "train_rows": 4867668,
+    "train_positive_rows": 442516,
+    "fit_seconds": 77.9,
+    "score_seconds": 365.4,
+    "seconds": 476.0
+  },
+  "metrics": {
+    "pr_auc": 0.28573629007804435,
+    "roc_auc": 0.8842764869827732,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.9866187198854801,
+      "detection_rate": 0.15777694889966432,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 423,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.980852394410982,
+      "detection_rate": 0.18052965311450953,
+      "false_alarm_rate": 0.0013112551203970611,
+      "failures": 2681,
+      "caught": 484,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.7156146081523908,
+      "detection_rate": 0.5124953375606117,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1374,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.6681273900963033,
+      "detection_rate": 0.5345020514733309,
+      "false_alarm_rate": 0.01179858687877934,
+      "failures": 2681,
+      "caught": 1433,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.00023901395048481422,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

@@ -1,0 +1,15 @@
+brand,kind,models,drives,drive_days,failures,afr_pct,share_of_failures_pct
+Seagate,data HDD,32,137521,120000979,5841,1.78,42.5
+Toshiba,data HDD,12,140259,111212035,3600,1.18,26.2
+HGST,data HDD,15,41985,34436786,2771,2.94,20.2
+Western Digital,data HDD,8,97404,73328432,1362,0.68,9.9
+Toshiba,boot HDD,2,414,310684,83,9.75,0.6
+Seagate,boot HDD,4,586,352163,28,2.9,0.2
+Seagate,boot SSD,8,2017,2031729,21,0.38,0.2
+Western Digital,boot SSD,2,372,322195,11,1.25,0.1
+Western Digital,boot HDD,3,217,127733,6,1.71,0.0
+Crucial,boot SSD,1,766,750132,4,0.19,0.0
+Dell BOSS,boot SSD,1,438,469977,3,0.23,0.0
+Micron,boot SSD,4,102,99934,2,0.73,0.0
+Samsung,boot SSD,5,32,4967,0,0.0,0.0
+Intel,boot SSD,2,2,1648,0,0.0,0.0

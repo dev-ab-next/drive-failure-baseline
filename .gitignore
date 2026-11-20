@@ -1,0 +1,17 @@
+# Raw and converted Backblaze data is never committed (Backblaze data terms)
+data/
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+# Large run outputs: model files go to the GitHub release, not git
+results/**/model.joblib
+results/**/test_drive_scores.parquet
+logs/
+# Per-run slice tables: only the headline run's are reported (RESULTS.md)
+results/**/slice_*.csv
+results/**/by_month.csv
+!results/benchmark_v1/N7/L4-M0-core-seed0/slice_*.csv
+!results/benchmark_v1/N7/L4-M0-core-seed0/by_month.csv
+# Improvement study model files (rebuilt by `dfb improve`)
+results/improvement_study/models/

@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 30,
+    "level": "L2",
+    "method": "M0",
+    "feature_set": "core",
+    "seed": 0,
+    "code_version": "752671c",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 4331936,
+    "train_positive_rows": 252580,
+    "fit_seconds": 100.5,
+    "score_seconds": 323.2,
+    "seconds": 443.3
+  },
+  "metrics": {
+    "pr_auc": 0.3634652749493836,
+    "roc_auc": 0.9076327938807093,
+    "failures": 2681,
+    "healthy_drives": 364908,
+    "test_curve_0.1pct": {
+      "threshold": 0.9999999928962195,
+      "detection_rate": 0.20402834763148078,
+      "false_alarm_rate": 0.0009975117015795763,
+      "failures": 2681,
+      "caught": 547,
+      "healthy_drives": 364908,
+      "warning_days_median": 17.0,
+      "warning_days_q1": 6.0,
+      "warning_days_q3": 27.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9999999771458467,
+      "detection_rate": 0.22752704214845207,
+      "false_alarm_rate": 0.001244149210211889,
+      "failures": 2681,
+      "caught": 610,
+      "healthy_drives": 364908,
+      "warning_days_median": 17.5,
+      "warning_days_q1": 7.0,
+      "warning_days_q3": 27.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.9992482796751713,
+      "detection_rate": 0.5766505035434539,
+      "false_alarm_rate": 0.009999780766658993,
+      "failures": 2681,
+      "caught": 1546,
+      "healthy_drives": 364908,
+      "warning_days_median": 25.0,
+      "warning_days_q1": 12.0,
+      "warning_days_q3": 29.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.9984477087527471,
+      "detection_rate": 0.597911227154047,
+      "false_alarm_rate": 0.01167691582535872,
+      "failures": 2681,
+      "caught": 1603,
+      "healthy_drives": 364908,
+      "warning_days_median": 26.0,
+      "warning_days_q1": 13.0,
+      "warning_days_q3": 29.0
+    },
+    "brier_test_calibrated": 0.001055809200375756,
+    "accuracy_of_always_healthy_test_days": 0.9988960302073753
+  }
+}

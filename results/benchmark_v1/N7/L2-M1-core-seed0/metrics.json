@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L2",
+    "method": "M1",
+    "feature_set": "core",
+    "seed": 0,
+    "code_version": "752671c",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 646767,
+    "train_positive_rows": 58797,
+    "fit_seconds": 12.6,
+    "score_seconds": 360.0,
+    "seconds": 392.2
+  },
+  "metrics": {
+    "pr_auc": 0.28738058116499476,
+    "roc_auc": 0.8844580805035244,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.9848037637825452,
+      "detection_rate": 0.16001491980604252,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 429,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9783341917572933,
+      "detection_rate": 0.18500559492726595,
+      "false_alarm_rate": 0.001368148421075446,
+      "failures": 2681,
+      "caught": 496,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.707994999469603,
+      "detection_rate": 0.5113763521074226,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1371,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.6615336573804474,
+      "detection_rate": 0.5352480417754569,
+      "false_alarm_rate": 0.011828388131515637,
+      "failures": 2681,
+      "caught": 1435,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.5,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.00023995374192379695,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

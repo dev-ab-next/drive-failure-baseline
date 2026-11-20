@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 14,
+    "level": "L4",
+    "method": "M0",
+    "feature_set": "core",
+    "seed": 2,
+    "code_version": "c482dec",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 4436656,
+    "train_positive_rows": 118096,
+    "fit_seconds": 26.2,
+    "score_seconds": 282.4,
+    "seconds": 322.7
+  },
+  "metrics": {
+    "pr_auc": 0.31442158293987965,
+    "roc_auc": 0.912751235087824,
+    "failures": 2681,
+    "healthy_drives": 367616,
+    "test_curve_0.1pct": {
+      "threshold": 0.9987152002452124,
+      "detection_rate": 0.15814994405072735,
+      "false_alarm_rate": 0.0009983243384401115,
+      "failures": 2681,
+      "caught": 424,
+      "healthy_drives": 367616,
+      "warning_days_median": 9.0,
+      "warning_days_q1": 3.0,
+      "warning_days_q3": 13.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9985671012545904,
+      "detection_rate": 0.17232375979112272,
+      "false_alarm_rate": 0.0012159427228412257,
+      "failures": 2681,
+      "caught": 462,
+      "healthy_drives": 367616,
+      "warning_days_median": 9.0,
+      "warning_days_q1": 4.0,
+      "warning_days_q3": 13.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.9888530582563735,
+      "detection_rate": 0.5572547556881761,
+      "false_alarm_rate": 0.009999564763231198,
+      "failures": 2681,
+      "caught": 1494,
+      "healthy_drives": 367616,
+      "warning_days_median": 12.0,
+      "warning_days_q1": 6.0,
+      "warning_days_q3": 13.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.9870038586337226,
+      "detection_rate": 0.5792614696008952,
+      "false_alarm_rate": 0.011234549094707521,
+      "failures": 2681,
+      "caught": 1553,
+      "healthy_drives": 367616,
+      "warning_days_median": 12.0,
+      "warning_days_q1": 6.0,
+      "warning_days_q3": 13.0
+    },
+    "brier_test_calibrated": 0.000468144596389005,
+    "accuracy_of_always_healthy_test_days": 0.999518043433909
+  }
+}

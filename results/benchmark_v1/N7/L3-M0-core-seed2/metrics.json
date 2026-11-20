@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L3",
+    "method": "M0",
+    "feature_set": "core",
+    "seed": 2,
+    "code_version": "e9a9a37",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 4483949,
+    "train_positive_rows": 58797,
+    "fit_seconds": 58.1,
+    "score_seconds": 256.1,
+    "seconds": 329.6
+  },
+  "metrics": {
+    "pr_auc": 0.22759757710339895,
+    "roc_auc": 0.9235990772745564,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.9963357207806282,
+      "detection_rate": 0.11600149198060425,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 311,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9960263018989224,
+      "detection_rate": 0.12532637075718014,
+      "false_alarm_rate": 0.0011026463512429831,
+      "failures": 2681,
+      "caught": 336,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.9781456572243381,
+      "detection_rate": 0.412159641924655,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1105,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.9768425203184653,
+      "detection_rate": 0.42334949645654607,
+      "false_alarm_rate": 0.010687812913153731,
+      "failures": 2681,
+      "caught": 1135,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.0002507446145214403,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

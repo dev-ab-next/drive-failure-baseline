@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L2",
+    "method": "M1",
+    "feature_set": "core",
+    "seed": 2,
+    "code_version": "e9a9a37",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 646767,
+    "train_positive_rows": 58797,
+    "fit_seconds": 13.1,
+    "score_seconds": 241.7,
+    "seconds": 270.1
+  },
+  "metrics": {
+    "pr_auc": 0.284966688603967,
+    "roc_auc": 0.8844488989165193,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.9863650554665638,
+      "detection_rate": 0.1555389779932861,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 417,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9796467412798197,
+      "detection_rate": 0.1801566579634465,
+      "false_alarm_rate": 0.001341056373133358,
+      "failures": 2681,
+      "caught": 483,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.7139193413061028,
+      "detection_rate": 0.5117493472584856,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1372,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.6666034453155516,
+      "detection_rate": 0.5348750466243939,
+      "false_alarm_rate": 0.011955720756843452,
+      "failures": 2681,
+      "caught": 1434,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.0002391119890247393,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

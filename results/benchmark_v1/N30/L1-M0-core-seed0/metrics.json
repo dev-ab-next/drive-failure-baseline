@@ -1,0 +1,65 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 30,
+    "level": "L1",
+    "method": "M0",
+    "feature_set": "core",
+    "seed": 0,
+    "code_version": "752671c",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "score_seconds": 221.4,
+    "seconds": 223.5
+  },
+  "metrics": {
+    "pr_auc": 0.18241260301502557,
+    "roc_auc": 0.886250846948237,
+    "failures": 2681,
+    "healthy_drives": 364908,
+    "test_curve_0.1pct": {
+      "threshold": 5.0,
+      "detection_rate": 0.11935844834017158,
+      "false_alarm_rate": 0.0008522696131627698,
+      "failures": 2681,
+      "caught": 320,
+      "healthy_drives": 364908,
+      "warning_days_median": 22.0,
+      "warning_days_q1": 10.0,
+      "warning_days_q3": 29.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 5.0,
+      "detection_rate": 0.11935844834017158,
+      "false_alarm_rate": 0.0008522696131627698,
+      "failures": 2681,
+      "caught": 320,
+      "healthy_drives": 364908,
+      "warning_days_median": 22.0,
+      "warning_days_q1": 10.0,
+      "warning_days_q3": 29.0
+    },
+    "test_curve_1pct": {
+      "threshold": 4.0,
+      "detection_rate": 0.20290936217829167,
+      "false_alarm_rate": 0.004647746829337805,
+      "failures": 2681,
+      "caught": 544,
+      "healthy_drives": 364908,
+      "warning_days_median": 25.0,
+      "warning_days_q1": 12.0,
+      "warning_days_q3": 29.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 4.0,
+      "detection_rate": 0.20290936217829167,
+      "false_alarm_rate": 0.004647746829337805,
+      "failures": 2681,
+      "caught": 544,
+      "healthy_drives": 364908,
+      "warning_days_median": 25.0,
+      "warning_days_q1": 12.0,
+      "warning_days_q3": 29.0
+    },
+    "accuracy_of_always_healthy_test_days": 0.9988960302073753
+  }
+}

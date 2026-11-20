@@ -1,0 +1,70 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L4",
+    "method": "M0",
+    "feature_set": "full",
+    "seed": 0,
+    "code_version": "752671c",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "train_rows": 4483949,
+    "train_positive_rows": 58797,
+    "fit_seconds": 39.7,
+    "score_seconds": 605.5,
+    "seconds": 686.0
+  },
+  "metrics": {
+    "pr_auc": 0.27217632046926804,
+    "roc_auc": 0.9063310869239092,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.9987348032474993,
+      "detection_rate": 0.13539723983588214,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 363,
+      "healthy_drives": 369112,
+      "warning_days_median": 4.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9985953791844521,
+      "detection_rate": 0.14994405072734054,
+      "false_alarm_rate": 0.0012055961334229176,
+      "failures": 2681,
+      "caught": 402,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.9885145701127284,
+      "detection_rate": 0.5113763521074226,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1371,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.9871847264612524,
+      "detection_rate": 0.5289071242073853,
+      "false_alarm_rate": 0.010904549296690436,
+      "failures": 2681,
+      "caught": 1418,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 3.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.00024108466781946748,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

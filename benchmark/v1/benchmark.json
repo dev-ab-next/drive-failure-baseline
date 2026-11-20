@@ -1,0 +1,242 @@
+{
+  "version": "benchmark_v1",
+  "data": {
+    "source": "Backblaze Drive Stats (https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data); cite Backblaze, do not resell",
+    "quarters": {
+      "Q1_2024": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q1_2024.zip",
+        "zip_sha256": "a7882f8788f1b9f42e85949db167b53fc1287b5108fdf3e1f0507143486d9d5b",
+        "zip_bytes": 1006502769,
+        "rows": 25189213
+      },
+      "Q1_2025": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q1_2025.zip",
+        "zip_sha256": "7a230565f72fdb3882c05fdcfab361c801e9a545ba18543899fc7618174171ec",
+        "zip_bytes": 1020483699,
+        "rows": 27799986
+      },
+      "Q1_2026": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q1_2026.zip",
+        "zip_sha256": "cad66574292b89bae8ec8370dbb5e90d2e0b45d61341502708df328fdb15ed5c",
+        "zip_bytes": 1312921361,
+        "rows": 30597484
+      },
+      "Q2_2024": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q2_2024.zip",
+        "zip_sha256": "3fb91aeb4f6e19ea5be53ba87d1e077a250f4fc476c3b42a4973432cd4d54155",
+        "zip_bytes": 1020665037,
+        "rows": 26022269
+      },
+      "Q2_2025": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q2_2025.zip",
+        "zip_sha256": "cb2e7a2354e5691ac0660302d59ab807bf40a8d436701448bf2a92c7dad0fc09",
+        "zip_bytes": 1067562257,
+        "rows": 28808042
+      },
+      "Q2_2026": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q2_2026.zip",
+        "zip_sha256": "b30be47290580c1aee9a5155afadc97c26e36220722bc5ee689108e949c74acc",
+        "zip_bytes": 2092757685,
+        "rows": 31968003
+      },
+      "Q3_2024": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q3_2024.zip",
+        "zip_sha256": "cafd7860ba9a07cc1bcbe5d4fe779db9e219592fd0b92a1336dc3efd40458c7c",
+        "zip_bytes": 1049339634,
+        "rows": 26822987
+      },
+      "Q3_2025": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q3_2025.zip",
+        "zip_sha256": "0c8962e8efef6eba5ebe6f17f561265fef07df68c88fe3c65d4225159c54528c",
+        "zip_bytes": 1111587745,
+        "rows": 29844451
+      },
+      "Q3_2026": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q3_2026.zip",
+        "zip_sha256": "1f301a27292bd9b4d52e86ddee312ac42a37cd9480dc6621e725d9b4aaaa2088",
+        "zip_bytes": 1831909793,
+        "rows": 33318960
+      },
+      "Q4_2023": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q4_2023.zip",
+        "zip_sha256": "57bc4b5a981a6500362e074e8ded121b31154b6dce51e0f2f21dab9d2b854164",
+        "zip_bytes": 1010626705,
+        "rows": 24790999
+      },
+      "Q4_2024": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q4_2024.zip",
+        "zip_sha256": "5bbaab6be27a49b0edef76300fbbd0f1fdf58cec932cc797840976a8c7daaab4",
+        "zip_bytes": 1066033183,
+        "rows": 27345292
+      },
+      "Q4_2025": {
+        "url": "https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/data_Q4_2025.zip",
+        "zip_sha256": "57d0667cc03f23f16ded693e1e83e1ed28b7ea42d54b88d221734f5926030cb5",
+        "zip_bytes": 1157851346,
+        "rows": 30941708
+      }
+    },
+    "schema": "drive_stats_v1",
+    "schema_sha256": "19869e99878b147fe5bdaea560fa02927e857309622717f11557a356ec911572"
+  },
+  "scope": "data hard drives only: not SSDs, not drives under 2 TB (decisions R-1, F-7)",
+  "splits": {
+    "train": {
+      "start": "2023-10-01",
+      "end": "2025-09-30"
+    },
+    "valid": {
+      "start": "2025-10-01",
+      "end": "2026-03-31"
+    },
+    "test": {
+      "start": "2026-04-01",
+      "end": "2026-09-30"
+    }
+  },
+  "split_rule": "by time; a drive may appear in several periods; a row is used only if its N-day label is decided inside its own period (S-4, L-2)",
+  "label": "positive if the drive fails within the next N days, counting the failure day; rows after the failure removed (L-1)",
+  "warning_windows_days": [
+    7,
+    14,
+    30
+  ],
+  "main_window_days": 7,
+  "features_used_by_baselines": {
+    "core_smart_raw": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      12,
+      192,
+      193,
+      194,
+      197,
+      198,
+      199
+    ],
+    "change_of": [
+      5,
+      187,
+      188,
+      197,
+      198,
+      199
+    ],
+    "change_windows_days": [
+      7,
+      30
+    ],
+    "brand_specific_smart_raw": [
+      2,
+      8,
+      18,
+      22,
+      23,
+      24,
+      27,
+      71,
+      90,
+      184,
+      187,
+      188,
+      189,
+      190,
+      191,
+      195,
+      196,
+      200,
+      220,
+      222,
+      223,
+      224,
+      226,
+      240,
+      241,
+      242
+    ]
+  },
+  "training_sample": {
+    "rate": 0.02,
+    "salt": "dfb-benchmark-v1",
+    "always_kept": "days within 30 days of a failure"
+  },
+  "evaluation": {
+    "unit": "drive (B-1, E-1)",
+    "false_alarm_levels": [
+      0.001,
+      0.01
+    ],
+    "headline_threshold": "set on validation, applied unchanged to test (E-2)",
+    "main_metrics": [
+      "detection rate at fixed false-alarm rate",
+      "days of warning"
+    ],
+    "other_metrics": [
+      "precision-recall AUC (per drive)",
+      "Brier after isotonic calibration on validation",
+      "ROC AUC (legacy only)"
+    ],
+    "slice_min_failures": 30
+  },
+  "counts": {
+    "train_N7": {
+      "rows": 4483949,
+      "drives": 355607,
+      "failed_drives": 8935,
+      "positive_rows": 58797
+    },
+    "train_N14": {
+      "rows": 4436656,
+      "drives": 354696,
+      "failed_drives": 8935,
+      "positive_rows": 118096
+    },
+    "train_N30": {
+      "rows": 4331936,
+      "drives": 353182,
+      "failed_drives": 8935,
+      "positive_rows": 252580
+    },
+    "valid_N7": {
+      "rows": 58754911,
+      "drives": 345686,
+      "failed_drives": 1958,
+      "positive_rows": 11475
+    },
+    "valid_N14": {
+      "rows": 56373123,
+      "drives": 345625,
+      "failed_drives": 1958,
+      "positive_rows": 22262
+    },
+    "valid_N30": {
+      "rows": 50952564,
+      "drives": 341787,
+      "failed_drives": 1958,
+      "positive_rows": 45737
+    },
+    "test_N7": {
+      "rows": 62359539,
+      "drives": 371793,
+      "failed_drives": 2681,
+      "positive_rows": 14827
+    },
+    "test_N14": {
+      "rows": 59808294,
+      "drives": 370297,
+      "failed_drives": 2681,
+      "positive_rows": 28825
+    },
+    "test_N30": {
+      "rows": 53994231,
+      "drives": 367589,
+      "failed_drives": 2681,
+      "positive_rows": 59608
+    }
+  }
+}

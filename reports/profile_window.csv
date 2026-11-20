@@ -1,0 +1,5 @@
+training window,training drive-days,training failures,models with >= 10 training failures,test drives whose model is seen in training pct,test drives whose model has >= 10 training failures pct,test failures whose model has >= 10 training failures pct
+Q2_2025 to Q3_2025 (0.5 yr),58652493,2307,23,98.0,91.3,96.5
+Q4_2024 to Q3_2025 (1 yr),113797771,4406,25,98.0,91.4,96.6
+Q2_2024 to Q3_2025 (1.5 yr),166643027,7058,30,98.0,91.7,96.6
+Q4_2023 to Q3_2025 (2 yr),216623239,9093,34,98.0,91.9,96.6

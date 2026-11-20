@@ -1,0 +1,72 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L4",
+    "method": "M2",
+    "feature_set": "core",
+    "seed": 1,
+    "code_version": "752671c",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "rows_added": 383719,
+    "train_rows": 4867668,
+    "train_positive_rows": 442516,
+    "fit_seconds": 34.2,
+    "resumed_from_saved_model": true,
+    "score_seconds": 427.9,
+    "seconds": 429.5
+  },
+  "metrics": {
+    "pr_auc": 0.2332383045909675,
+    "roc_auc": 0.9072071832241932,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.7891002703899297,
+      "detection_rate": 0.1186124580380455,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 318,
+      "healthy_drives": 369112,
+      "warning_days_median": 3.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.7644723288259966,
+      "detection_rate": 0.16113390525923163,
+      "false_alarm_rate": 0.0013383471683391492,
+      "failures": 2681,
+      "caught": 432,
+      "healthy_drives": 369112,
+      "warning_days_median": 4.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.5552876071307297,
+      "detection_rate": 0.402088772845953,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1078,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.545918618023577,
+      "detection_rate": 0.41663558373741144,
+      "false_alarm_rate": 0.010785344285745247,
+      "failures": 2681,
+      "caught": 1117,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.0002477917454359133,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

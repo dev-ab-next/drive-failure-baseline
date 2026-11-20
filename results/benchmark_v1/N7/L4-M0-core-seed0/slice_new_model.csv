@@ -1,0 +1,3 @@
+new_model,failures,healthy_drives,detection_rate,false_alarm_rate,note
+False,2649,361723,0.5198187995469988,0.011038833582603262,
+True,32,7389,0.53125,0.0071728244688049805,

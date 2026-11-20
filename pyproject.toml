@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drive-failure-baseline"
+version = "1.0.0"
+description = "Open, leak-free baseline for rare hard-drive failure prediction on the Backblaze Drive Stats dataset"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "Abinandaraj Rajendran" }]
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "tabulate>=0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+models = [
+    "duckdb==1.4.1",
+    "scikit-learn==1.7.2",
+    "lightgbm==4.6.0",
+    "imbalanced-learn==0.14.0",
+    "joblib",
+    "ctgan==0.11.0",
+]
+
+[project.scripts]
+dfb = "dfb.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,75 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L4",
+    "method": "M3",
+    "feature_set": "core",
+    "seed": 2,
+    "code_version": "2dbf3b6",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "rows_added": 383719,
+    "ctgan_epochs": 100,
+    "ctgan_training_rows": 58797,
+    "ctgan_seconds": 1188.7,
+    "sampling_weights_kept": true,
+    "train_rows": 4867668,
+    "train_positive_rows": 442516,
+    "fit_seconds": 33.9,
+    "score_seconds": 329.0,
+    "seconds": 1568.8
+  },
+  "metrics": {
+    "pr_auc": 0.27773145914330655,
+    "roc_auc": 0.9071193917510456,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.9932824295524322,
+      "detection_rate": 0.13427825438269303,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 360,
+      "healthy_drives": 369112,
+      "warning_days_median": 4.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.9915399417091094,
+      "detection_rate": 0.15964192465497948,
+      "false_alarm_rate": 0.001341056373133358,
+      "failures": 2681,
+      "caught": 428,
+      "healthy_drives": 369112,
+      "warning_days_median": 4.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.9288219297119137,
+      "detection_rate": 0.5180902648265573,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1389,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 3.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.9183416760932854,
+      "detection_rate": 0.5386049981350243,
+      "false_alarm_rate": 0.011197143414464986,
+      "failures": 2681,
+      "caught": 1444,
+      "healthy_drives": 369112,
+      "warning_days_median": 6.0,
+      "warning_days_q1": 3.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.0002443020310955121,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

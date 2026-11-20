@@ -1,0 +1,74 @@
+{
+  "run": {
+    "benchmark": "benchmark_v1",
+    "n": 7,
+    "level": "L4",
+    "method": "M3",
+    "feature_set": "core",
+    "seed": 2,
+    "code_version": "6a99915",
+    "data_window": "2023 Q4 to 2026 Q3",
+    "leakage_checks": "passed",
+    "rows_added": 383719,
+    "ctgan_epochs": 100,
+    "ctgan_training_rows": 58797,
+    "ctgan_seconds": 1108.8,
+    "train_rows": 4867668,
+    "train_positive_rows": 442516,
+    "fit_seconds": 21.4,
+    "score_seconds": 314.4,
+    "seconds": 1530.4
+  },
+  "metrics": {
+    "pr_auc": 0.266050596514507,
+    "roc_auc": 0.9198457195886012,
+    "failures": 2681,
+    "healthy_drives": 369112,
+    "test_curve_0.1pct": {
+      "threshold": 0.5387004570052537,
+      "detection_rate": 0.1298023125699366,
+      "false_alarm_rate": 0.0009996965690630486,
+      "failures": 2681,
+      "caught": 348,
+      "healthy_drives": 369112,
+      "warning_days_median": 4.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_0.1pct": {
+      "threshold": 0.4983619991448439,
+      "detection_rate": 0.15814994405072735,
+      "false_alarm_rate": 0.0013383471683391492,
+      "failures": 2681,
+      "caught": 424,
+      "healthy_drives": 369112,
+      "warning_days_median": 4.0,
+      "warning_days_q1": 1.0,
+      "warning_days_q3": 6.0
+    },
+    "test_curve_1pct": {
+      "threshold": 0.27036708595081055,
+      "detection_rate": 0.484520701230884,
+      "false_alarm_rate": 0.009999674895424695,
+      "failures": 2681,
+      "caught": 1299,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "valid_threshold_1pct": {
+      "threshold": 0.26181150442933576,
+      "detection_rate": 0.49832152182021633,
+      "false_alarm_rate": 0.010928932139838315,
+      "failures": 2681,
+      "caught": 1336,
+      "healthy_drives": 369112,
+      "warning_days_median": 5.0,
+      "warning_days_q1": 2.0,
+      "warning_days_q3": 6.0
+    },
+    "brier_test_calibrated": 0.00024127262542329194,
+    "accuracy_of_always_healthy_test_days": 0.9997622336496105
+  }
+}

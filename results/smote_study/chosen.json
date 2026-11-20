@@ -1,0 +1,9 @@
+{
+  "name": "cross-drive + categorical + weights",
+  "k": 5,
+  "ratio": 10,
+  "cross_drive": true,
+  "categorical": true,
+  "weighted": true,
+  "method": "smote"
+}
